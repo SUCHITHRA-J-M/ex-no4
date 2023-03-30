@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Register</title> 
+    <style>
+        .center {
+            text-align: center;
+            width: 750px;
+            border: 100px;
+            border-color: rgb(241, 178, 59);
+            border-style: double;
+            padding: 200px;
+            border-width: 5px;
+            padding-top: 50px;
+            padding-right: 20px;
+            padding-bottom: 50px;
+            padding-left: 5px;
+            margin: 100px;
+            margin-left: 310px;
+        }
+        tag {
+            font-family:'Times New Roman', Times, serif;
+        }
+        form {
+            font-family:'Times New Roman', Times, serif;font-weight: bold;
+            border-spacing: 5pt;
+        }
+        .button:hover{
+            background-color: grey;
+            color: whitesmoke;
+            cursor: pointer;
+            border-radius: 7pt;
+        }
+        
+    </style>
+</head>
+<body bgcolor="LightSeaGreen">
+    <div class="center">
+        <h1>
+            <tag><b>BANK REGISTERATION FORM</b></tag><br>
+        </h1>
+            <form name="form" action="login.html">
+                <center>
+
+                <label for="user name">User name</label>
+                <input type="text" id="USERNAME" name="USER NAME" pattern="[A-Za-z0-9]+" required><br><br>
+                <label for="first name">First name</label>
+                <input type="text" id="FIRST NAME" name="FIRST NAME" pattern="[A-Za-z]+" required><br><br>
+                <label for="last name">Last name</label>
+                <input type="text" id="LAST NAME" name="LAST NAME" pattern="[A-Za-z]+" required><br><br>
+            
+                <label for="psw">Password</label>
+                <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder= "any strong password" required>
+            <br><br>
+                <label for="email-id">Email id</label>
+                <input types="email" id="email" name="email" placeholder= "abc@mail.com" required>
+                <br><br>
+                <label for="Date of birth">Date of Birth</label>
+                <input type="date" name="date" >
+            <br><br>
+                <label for="Phone No.">Phone No.</label>
+                <input type="text" name="phone" pattern="[0-9]{10}" placeholder= "10 digits"required/>
+                <br><br>
+                <label for="PAN No.">PAN No.</label>
+                <input type="text" name="PAN" pattern="[A-Za-z0-9]{10}" placeholder= "ABCDE1234F" required>
+                <br><br>
+                <label for="Aadhar No">Aadhar Number</label>
+                <input type="text" name="adhr" pattern="[0-9]{12}" placeholder= "12 digits"required>
+                <br><br>
+                <label for="gender">Gender</label> 
+                <select name="gender" id="gen">
+                    <option value="">Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="others">Others</option>
+                </select>
+                <br><br>
+                <label for="Address">Address</label>
+                <textarea name="address" required></textarea>
+                <br><br>
+                <label>Address Proof</label>
+                        
+                            <select name="Proof" required>
+                            <option value="">Select a proof</option>
+                            <option value="Driving License">Driving License</option>
+                            <option value="Passport">Passport</option>
+                            <option value="PAN card">PAN card</option>
+
+                            </select>
+                        <br><br>
+
+                <label for="prf">Upload Proof</label>
+                <input type="file" name="upload" required>
+                <br><br>   
+                <input type="submit" name="SUBMIT" class="button"  >
+                <input type="reset" name="RESET" class="button"  >
+                    <br><br>
+            </center>
+            </form>
+    </div>
+</body>
+</html>
